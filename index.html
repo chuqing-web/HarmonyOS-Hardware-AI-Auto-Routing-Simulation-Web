@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI-SCH Simulator — HarmonyOS-native schematic simulation with engineered AI design pipeline." />
+  <meta name="description" content="AI-SCH Simulator — HarmonyOS-native schematic simulation, PCB 2D/3D preview, and engineered AI design pipeline." />
   <title>AI-SCH Simulator · HarmonyOS Hardware AI Simulation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +19,9 @@
       </a>
       <ul class="nav-links">
         <li><a href="#features" data-i18n="nav.features">Features</a></li>
-        <li><a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a></li>
         <li><a href="#simulation" data-i18n="nav.simulation">Simulation</a></li>
+        <li><a href="#pcb" data-i18n="nav.pcb">PCB</a></li>
+        <li><a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a></li>
         <li><a href="#labs" data-i18n="nav.labs">Labs</a></li>
         <li><a href="#announcement" data-i18n="nav.announcement">News</a></li>
       </ul>
@@ -37,20 +38,20 @@
         <div class="reveal">
           <div class="eyebrow" data-i18n="hero.eyebrow">HarmonyOS NEXT · ElecDraw</div>
           <h1 data-i18n="hero.title">Schematic simulation that turns AI into verifiable circuits</h1>
-          <p class="hero-sub" data-i18n="hero.sub">AI-SCH brings Proteus-class editing and mixed-signal simulation to HarmonyOS — with an engineered multi-agent loop from clarify → place → net → WAR route → QA.</p>
+          <p class="hero-sub" data-i18n="hero.sub">AI-SCH brings Proteus-class editing, mixed-signal simulation, and PCB 2D/3D preview to HarmonyOS — with an engineered multi-agent loop from clarify → place → net → WAR route → QA.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#features" data-i18n="hero.ctaPrimary">Explore capabilities</a>
-            <a class="btn btn-ghost" href="#announcement" data-i18n="hero.ctaSecondary">View announcement</a>
+            <a class="btn btn-ghost" href="#pcb">PCB 2D / 3D</a>
           </div>
           <span class="badge" data-i18n="hero.badge">v1.1.0 · Native ArkTS</span>
         </div>
         <div class="hero-visual reveal d2">
           <div class="hero-frame">
-            <img src="assets/images/hero-poster.png" alt="AI-SCH product design poster" width="900" height="675" />
+            <img src="assets/images/pcb-3d.png" alt="AI-SCH PCB 3D preview" width="900" height="675" />
           </div>
           <div class="hero-float">
-            <strong>WAR · ERC · Instruments</strong>
-            Local engines keep AI outputs simulatable.
+            <strong data-i18n="hero.floatTitle">SCH · PCB · Instruments</strong>
+            <span data-i18n="hero.floatBody">From topology to board preview in one HarmonyOS app.</span>
           </div>
         </div>
       </div>
@@ -60,11 +61,11 @@
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow" data-i18n="ann.eyebrow">Latest announcement</div>
-          <h2>AI-SCH News</h2>
+          <h2 data-i18n="ann.title">AI-SCH News</h2>
         </div>
         <article class="ann-card reveal d1" id="announcement-panel">
           <div class="ann-media">
-            <img data-ann-image src="assets/images/announcement.png" alt="" width="800" height="600" />
+            <img data-ann-image src="assets/images/pcb-2d.png" alt="" width="800" height="600" />
           </div>
           <div class="ann-body">
             <p class="ann-status" data-ann-status data-i18n="ann.loading">Loading announcement…</p>
@@ -108,6 +109,36 @@
       </div>
     </section>
 
+    <section class="pcb-showcase" id="pcb">
+      <div class="container">
+        <div class="section-head reveal section-head-wide">
+          <div class="eyebrow" data-i18n="pcb.eyebrow">Board preview</div>
+          <h2 data-i18n="pcb.title">PCB workspace — 2D layout &amp; 3D inspection</h2>
+          <p class="section-sub" data-i18n="pcb.sub">After schematic capture and AI routing, review copper layers in 2D and validate the physical board in 3D — the same HarmonyOS-native toolchain.</p>
+        </div>
+        <div class="pcb-gallery">
+          <figure class="pcb-shot reveal">
+            <div class="pcb-shot-frame">
+              <img src="assets/images/pcb-2d.png" alt="PCB 2D copper layout preview" width="1200" height="800" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="pcb-tag" data-i18n="pcb.tag2d">2D copper &amp; placement</span>
+              <p data-i18n="pcb.note2d">Multi-layer traces, pads, and silk for teaching boards</p>
+            </figcaption>
+          </figure>
+          <figure class="pcb-shot reveal d2">
+            <div class="pcb-shot-frame">
+              <img src="assets/images/pcb-3d.png" alt="PCB 3D board preview" width="1200" height="800" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="pcb-tag" data-i18n="pcb.tag3d">3D board preview</span>
+              <p data-i18n="pcb.note3d">Spatial check of packages and board outline</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="cap-section" id="simulation">
       <div class="container">
         <div class="section-head reveal">
@@ -140,21 +171,21 @@
             <img src="assets/images/feature-labs.png" alt="Lab templates" width="640" height="360" loading="lazy" />
             <div class="cap-copy">
               <h3 data-i18n="cap.lab.title">Lab templates</h3>
-              <p data-i18n="cap.lab.body">Dozens of .schsim experiments spanning passives, op-amps, digital gates, MCU, and UART.</p>
+              <p data-i18n="cap.lab.body">Dozens of .schsim / .pcbsim experiments spanning passives, op-amps, digital gates, MCU, and UART.</p>
             </div>
           </article>
           <article class="cap-card reveal d1">
-            <img src="assets/images/hero-poster.png" alt="Simulation overview" width="640" height="360" loading="lazy" />
+            <img src="assets/images/pcb-2d.png" alt="PCB 2D editor" width="640" height="360" loading="lazy" />
             <div class="cap-copy">
-              <h3 data-i18n="cap.sim.title">Mixed-signal simulation</h3>
-              <p data-i18n="cap.sim.body">Transient / DC / AC paths, interactive pots &amp; switches, fault types for teaching diagnosis.</p>
+              <h3 data-i18n="cap.pcb.title">PCB 2D editor</h3>
+              <p data-i18n="cap.pcb.body">Forward annotation, copper-aware routing, multi-layer lab boards with clash-free teaching layouts.</p>
             </div>
           </article>
           <article class="cap-card reveal d2">
-            <img src="assets/images/announcement.png" alt="PCB and routing" width="640" height="360" loading="lazy" />
+            <img src="assets/images/pcb-3d.png" alt="PCB 3D preview" width="640" height="360" loading="lazy" />
             <div class="cap-copy">
-              <h3 data-i18n="cap.pcb.title">PCB forward path</h3>
-              <p data-i18n="cap.pcb.body">Annotation, geometry routing aids, copper-layer aware lab templates for teaching boards.</p>
+              <h3 data-i18n="cap.pcb3d.title">PCB 3D preview</h3>
+              <p data-i18n="cap.pcb3d.body">Inspect footprints, silkscreen, and board geometry in an interactive 3D view before fab.</p>
             </div>
           </article>
         </div>

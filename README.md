@@ -25,10 +25,19 @@ Edit `api/announcement.json`:
 | `body_zh` / `body_en` | Localized body |
 | `title` / `body` | Mirror Chinese (app compatibility) |
 | `imageUrl` | **Absolute** HTTPS URL under `/assets/images/` |
-| `linkUrl` | Usually the site root |
+| `linkUrl` | Usually the site root or `#pcb` |
 | `publishedAt` | Display date |
 
-Replace the image file under `assets/images/` if needed, then commit & push.
+### Product screenshots
+
+| File | Use |
+|------|-----|
+| `assets/images/pcb-2d.png` | PCB 2D layout (announcement + gallery) |
+| `assets/images/pcb-3d.png` | PCB 3D preview (hero + gallery) |
+| `assets/images/feature-*.png` | Capability cards |
+| `assets/images/hero-poster.png` | Optional poster asset |
+
+Replace image files under `assets/images/` if needed, then commit & push.
 
 ## Local preview
 
