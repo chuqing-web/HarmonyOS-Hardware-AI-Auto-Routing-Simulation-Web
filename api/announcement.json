@@ -1,0 +1,14 @@
+{
+  "id": "2026-08-04-welcome",
+  "title_zh": "AI-SCH 仿真器正式上线公告频道",
+  "title_en": "AI-SCH Simulator announcement channel is live",
+  "body_zh": "欢迎使用 AI-SCH 仿真器。本频道将同步版本动态、实验模板与 AI 能力更新。打开官网可了解 HarmonyOS 原生混合信号仿真、多 Agent 原理图闭环与教学实验全景。",
+  "body_en": "Welcome to AI-SCH Simulator. This channel carries release notes, lab template updates, and AI capability news. Visit the site for HarmonyOS-native mixed-signal simulation, the multi-agent schematic pipeline, and the teaching lab overview.",
+  "title": "AI-SCH 仿真器正式上线公告频道",
+  "body": "欢迎使用 AI-SCH 仿真器。本频道将同步版本动态、实验模板与 AI 能力更新。打开官网可了解 HarmonyOS 原生混合信号仿真、多 Agent 原理图闭环与教学实验全景。",
+  "imageUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/announcement.png",
+  "image_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/announcement.png",
+  "linkUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/",
+  "link_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/",
+  "publishedAt": "2026-08-04"
+}

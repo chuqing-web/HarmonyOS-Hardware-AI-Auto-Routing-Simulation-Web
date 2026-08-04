@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI-SCH Simulator — HarmonyOS-native schematic simulation with engineered AI design pipeline." />
+  <title>AI-SCH Simulator · HarmonyOS Hardware AI Simulation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="AI-SCH home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        AI-SCH
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a></li>
+        <li><a href="#simulation" data-i18n="nav.simulation">Simulation</a></li>
+        <li><a href="#labs" data-i18n="nav.labs">Labs</a></li>
+        <li><a href="#announcement" data-i18n="nav.announcement">News</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" class="is-active" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="zh" aria-pressed="false">中</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow" data-i18n="hero.eyebrow">HarmonyOS NEXT · ElecDraw</div>
+          <h1 data-i18n="hero.title">Schematic simulation that turns AI into verifiable circuits</h1>
+          <p class="hero-sub" data-i18n="hero.sub">AI-SCH brings Proteus-class editing and mixed-signal simulation to HarmonyOS — with an engineered multi-agent loop from clarify → place → net → WAR route → QA.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#features" data-i18n="hero.ctaPrimary">Explore capabilities</a>
+            <a class="btn btn-ghost" href="#announcement" data-i18n="hero.ctaSecondary">View announcement</a>
+          </div>
+          <span class="badge" data-i18n="hero.badge">v1.1.0 · Native ArkTS</span>
+        </div>
+        <div class="hero-visual reveal d2">
+          <div class="hero-frame">
+            <img src="assets/images/hero-poster.png" alt="AI-SCH product design poster" width="900" height="675" />
+          </div>
+          <div class="hero-float">
+            <strong>WAR · ERC · Instruments</strong>
+            Local engines keep AI outputs simulatable.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement" id="announcement">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow" data-i18n="ann.eyebrow">Latest announcement</div>
+          <h2>AI-SCH News</h2>
+        </div>
+        <article class="ann-card reveal d1" id="announcement-panel">
+          <div class="ann-media">
+            <img data-ann-image src="assets/images/announcement.png" alt="" width="800" height="600" />
+          </div>
+          <div class="ann-body">
+            <p class="ann-status" data-ann-status data-i18n="ann.loading">Loading announcement…</p>
+            <p class="ann-meta" data-ann-meta></p>
+            <h3 data-ann-title></h3>
+            <p class="ann-text" data-ann-body></p>
+            <a class="btn btn-primary" data-ann-link href="#" hidden data-i18n="ann.openLink">Open details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow" data-i18n="why.eyebrow">More than chat</div>
+          <h2 data-i18n="why.title">Not just models — build trusted, simulatable intelligence</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-icon">01</div>
+            <h3 data-i18n="why.card1.title">Executable topology</h3>
+            <p data-i18n="why.card1.body">Prompts emit structured constraints. Local engines place, net, route, and gate with ERC — never “text as a circuit.”</p>
+          </article>
+          <article class="why-card reveal d1">
+            <div class="why-icon">02</div>
+            <h3 data-i18n="why.card2.title">Mixed-signal kernel</h3>
+            <p data-i18n="why.card2.body">Analog MNA, event-driven digital, in-process 8051 / Cortex-M3 teaching paths, nanosecond global scheduling.</p>
+          </article>
+          <article class="why-card reveal d2">
+            <div class="why-icon">03</div>
+            <h3 data-i18n="why.card3.title">Teachable loop</h3>
+            <p data-i18n="why.card3.body">Lab templates, stepwise power-up, fault injection, instrument binding, and coverage-oriented classroom workflows.</p>
+          </article>
+          <article class="why-card reveal d3">
+            <div class="why-icon">04</div>
+            <h3 data-i18n="why.card4.title">HarmonyOS native</h3>
+            <p data-i18n="why.card4.body">Built for 2-in-1 / tablet on HarmonyOS NEXT with modular HAR architecture and Proteus-flavored UX.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cap-section" id="simulation">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow" data-i18n="cap.eyebrow">Flagship capability family</div>
+          <h2 data-i18n="cap.title">One platform from idea to waveform</h2>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-card reveal">
+            <img src="assets/images/feature-ai.png" alt="AI generation pipeline" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.ai.title">AI design pipeline</h3>
+              <p data-i18n="cap.ai.body">Versioned prompts, multi-agent quality bus, device usage manuals, modular parallel generation.</p>
+            </div>
+          </article>
+          <article class="cap-card reveal d1">
+            <img src="assets/images/feature-instruments.png" alt="Virtual instruments" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.inst.title">Virtual instruments</h3>
+              <p data-i18n="cap.inst.body">Scope, logic analyzer, DMM, sources, UART terminal — live-bound to schematic nets.</p>
+            </div>
+          </article>
+          <article class="cap-card reveal d2">
+            <img src="assets/images/feature-mcu.png" alt="MCU debug panel" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.mcu.title">MCU debug</h3>
+              <p data-i18n="cap.mcu.body">Intel HEX load, SFR / core registers, breakpoints, virtual UART with instrument loopback.</p>
+            </div>
+          </article>
+          <article class="cap-card reveal" id="labs">
+            <img src="assets/images/feature-labs.png" alt="Lab templates" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.lab.title">Lab templates</h3>
+              <p data-i18n="cap.lab.body">Dozens of .schsim experiments spanning passives, op-amps, digital gates, MCU, and UART.</p>
+            </div>
+          </article>
+          <article class="cap-card reveal d1">
+            <img src="assets/images/hero-poster.png" alt="Simulation overview" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.sim.title">Mixed-signal simulation</h3>
+              <p data-i18n="cap.sim.body">Transient / DC / AC paths, interactive pots &amp; switches, fault types for teaching diagnosis.</p>
+            </div>
+          </article>
+          <article class="cap-card reveal d2">
+            <img src="assets/images/announcement.png" alt="PCB and routing" width="640" height="360" loading="lazy" />
+            <div class="cap-copy">
+              <h3 data-i18n="cap.pcb.title">PCB forward path</h3>
+              <p data-i18n="cap.pcb.body">Annotation, geometry routing aids, copper-layer aware lab templates for teaching boards.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pipeline">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow" data-i18n="pipe.eyebrow">AI closed loop</div>
+          <h2 data-i18n="pipe.title">Clarify → select → layout → net → WAR → QA</h2>
+        </div>
+        <div class="pipe-track">
+          <article class="pipe-step reveal"><div class="pipe-idx">1</div><h3 data-i18n="pipe.s1">Clarify</h3><p data-i18n="pipe.s1d">Ask only topology-critical ambiguity</p></article>
+          <article class="pipe-step reveal d1"><div class="pipe-idx">2</div><h3 data-i18n="pipe.s2">Select</h3><p data-i18n="pipe.s2d">Library-bound BOM, anti-hallucination</p></article>
+          <article class="pipe-step reveal d2"><div class="pipe-idx">3</div><h3 data-i18n="pipe.s3">Layout</h3><p data-i18n="pipe.s3d">Region / adjacency → GA placement</p></article>
+          <article class="pipe-step reveal d3"><div class="pipe-idx">4</div><h3 data-i18n="pipe.s4">Net</h3><p data-i18n="pipe.s4d">Pin-level nets + usage manuals</p></article>
+          <article class="pipe-step reveal d4"><div class="pipe-idx">5</div><h3 data-i18n="pipe.s5">WAR</h3><p data-i18n="pipe.s5d">Same router as the editor</p></article>
+          <article class="pipe-step reveal"><div class="pipe-idx">6</div><h3 data-i18n="pipe.s6">QA</h3><p data-i18n="pipe.s6d">ERC &amp; geometry hard gates</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform">
+      <div class="container platform-grid">
+        <div class="reveal">
+          <div class="eyebrow" data-i18n="plat.eyebrow">Platform</div>
+          <h2 data-i18n="plat.title">Native on HarmonyOS NEXT</h2>
+          <p data-i18n="plat.body">AI-SCH Simulator (com.elecdraw.aischsim) targets SDK API 12+, Stage model ArkUI, and classroom / contest / pre-validation workflows — filling the gap left by Windows-only EDA toolchains.</p>
+        </div>
+        <ul class="reveal d2">
+          <li data-i18n="plat.li1">Bundle · com.elecdraw.aischsim</li>
+          <li data-i18n="plat.li2">License · Apache-2.0</li>
+          <li data-i18n="plat.li3">Vendor · ElecDraw</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>
+          <div class="brand" style="color:#fff;margin-bottom:0.5rem">
+            <span class="brand-mark" aria-hidden="true"></span>
+            AI-SCH
+          </div>
+          <div data-i18n="footer.tag">Hardware AI auto-routing &amp; simulation for HarmonyOS</div>
+        </div>
+        <div class="footer-links">
+          <a href="api/announcement.json" data-i18n="footer.api">Announcement API</a>
+          <a href="https://github.com/chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web" data-i18n="footer.github">Deploy repository</a>
+        </div>
+      </div>
+      <div class="footer-copy" data-i18n="footer.copy">© 2024–2026 ElecDraw · AI-SCH Simulator</div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
