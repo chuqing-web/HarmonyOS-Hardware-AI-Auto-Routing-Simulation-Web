@@ -505,41 +505,22 @@ section {
   max-width: 28rem;
 }
 
-/* Pipeline — flow ribbon + open steps */
+/* Pipeline */
 .pipeline {
   background: var(--bg-elevated);
   border-top: 1px solid var(--line);
 }
 
 .section-head-pipe {
-  max-width: 36rem;
-  margin-bottom: 1.75rem;
+  max-width: none;
+  margin-bottom: 2.25rem;
 }
 
-.pipe-flow {
-  margin: 0 0 2.5rem;
-  padding: 0.95rem 1.15rem;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.35)),
-    repeating-linear-gradient(
-      -12deg,
-      transparent,
-      transparent 10px,
-      rgba(15, 118, 110, 0.035) 10px,
-      rgba(15, 118, 110, 0.035) 11px
-    );
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(0.72rem, 0.42rem + 1.55vw, 1.15rem);
-  letter-spacing: -0.02em;
-  line-height: 1.35;
-  text-align: center;
+.pipe-title {
   white-space: nowrap;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  color: var(--ink);
+  font-size: clamp(1rem, 0.7rem + 1.4vw, 1.85rem) !important;
+  line-height: 1.35 !important;
 }
 
 .pipe-track {
@@ -790,10 +771,6 @@ section {
     padding-left: 0;
     padding-right: 0;
     border-right: 0;
-  }
-
-  .pipe-flow {
-    padding: 0.8rem 0.85rem;
   }
 
   .pipe-track {
