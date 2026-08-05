@@ -165,15 +165,24 @@
 
     <section id="pipeline" class="pipeline">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head section-head-pipe reveal">
           <p class="eyebrow" data-i18n="pipe.eyebrow">AI closed loop</p>
-          <h2 data-i18n="pipe.title">Clarify → select → layout → net → WAR → QA</h2>
+          <h2 data-i18n="pipe.title">From clarify to hard gates</h2>
+          <p class="section-sub" data-i18n="pipe.sub">Six engineered stages — each hands off structured artifacts, never free-form “text as circuit.”</p>
         </div>
+        <ol class="pipe-flow" aria-label="AI closed-loop stages">
+          <li class="reveal"><span data-i18n="pipe.s1">Clarify</span></li>
+          <li class="reveal d1"><span data-i18n="pipe.s2">Select</span></li>
+          <li class="reveal d2"><span data-i18n="pipe.s3">Layout</span></li>
+          <li class="reveal d3"><span data-i18n="pipe.s4">Net</span></li>
+          <li class="reveal d4"><span data-i18n="pipe.s5">WAR</span></li>
+          <li class="reveal"><span data-i18n="pipe.s6">QA</span></li>
+        </ol>
         <ol class="pipe-track">
-          <li class="pipe-step reveal"><span class="pipe-idx">1</span><h3 data-i18n="pipe.s1">Clarify</h3><p data-i18n="pipe.s1d">Ask only topology-critical ambiguity</p></li>
-          <li class="pipe-step reveal d1"><span class="pipe-idx">2</span><h3 data-i18n="pipe.s2">Select</h3><p data-i18n="pipe.s2d">Library-bound BOM, anti-hallucination</p></li>
-          <li class="pipe-step reveal d2"><span class="pipe-idx">3</span><h3 data-i18n="pipe.s3">Layout</h3><p data-i18n="pipe.s3d">Region / adjacency → GA placement</p></li>
-          <li class="pipe-step reveal d3"><span class="pipe-idx">4</span><h3 data-i18n="pipe.s4">Net</h3><p data-i18n="pipe.s4d">Pin-level nets + usage manuals</p></li>
+          <li class="pipe-step reveal"><span class="pipe-idx">1</span><h3 data-i18n="pipe.s1">Clarify</h3><p data-i18n="pipe.s1d">Topology-critical questions only</p></li>
+          <li class="pipe-step reveal d1"><span class="pipe-idx">2</span><h3 data-i18n="pipe.s2">Select</h3><p data-i18n="pipe.s2d">Library BOM, no hallucinated parts</p></li>
+          <li class="pipe-step reveal d2"><span class="pipe-idx">3</span><h3 data-i18n="pipe.s3">Layout</h3><p data-i18n="pipe.s3d">Region adjacency → GA place</p></li>
+          <li class="pipe-step reveal d3"><span class="pipe-idx">4</span><h3 data-i18n="pipe.s4">Net</h3><p data-i18n="pipe.s4d">Pin nets + usage manuals</p></li>
           <li class="pipe-step reveal d4"><span class="pipe-idx">5</span><h3 data-i18n="pipe.s5">WAR</h3><p data-i18n="pipe.s5d">Same router as the editor</p></li>
           <li class="pipe-step reveal"><span class="pipe-idx">6</span><h3 data-i18n="pipe.s6">QA</h3><p data-i18n="pipe.s6d">ERC &amp; geometry hard gates</p></li>
         </ol>
