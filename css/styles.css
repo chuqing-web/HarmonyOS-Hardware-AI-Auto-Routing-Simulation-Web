@@ -517,17 +517,8 @@ section {
 }
 
 .pipe-flow {
-  list-style: none;
   margin: 0 0 2.5rem;
-  padding: 0.85rem 1rem;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.35rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  padding: 0.95rem 1.15rem;
   border: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.35)),
@@ -538,39 +529,17 @@ section {
       rgba(15, 118, 110, 0.035) 10px,
       rgba(15, 118, 110, 0.035) 11px
     );
-}
-
-.pipe-flow li {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-  min-width: 0;
-  justify-content: center;
-  gap: 0.35rem;
-}
-
-.pipe-flow li:not(:last-child)::after {
-  content: "→";
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-left: auto;
-  padding-left: 0.35rem;
-  flex-shrink: 0;
-  opacity: 0.85;
-}
-
-.pipe-flow span {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(0.92rem, 1.35vw, 1.12rem);
+  font-size: clamp(0.72rem, 0.42rem + 1.55vw, 1.15rem);
   letter-spacing: -0.02em;
+  line-height: 1.35;
+  text-align: center;
   white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
   color: var(--ink);
-}
-
-.pipe-flow li:last-child span {
-  color: var(--accent-deep);
 }
 
 .pipe-track {
@@ -824,18 +793,7 @@ section {
   }
 
   .pipe-flow {
-    justify-content: flex-start;
-    gap: 0.5rem 0.75rem;
-    padding: 0.75rem 0.9rem;
-  }
-
-  .pipe-flow li {
-    flex: 0 0 auto;
-  }
-
-  .pipe-flow li:not(:last-child)::after {
-    margin-left: 0.5rem;
-    padding-left: 0;
+    padding: 0.8rem 0.85rem;
   }
 
   .pipe-track {
