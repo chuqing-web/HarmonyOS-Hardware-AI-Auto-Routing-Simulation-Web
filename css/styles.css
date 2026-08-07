@@ -222,13 +222,15 @@ a {
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-size: clamp(1.05rem, 0.7rem + 1.55vw, 1.85rem);
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.02em;
   margin: 0 0 1rem;
   color: rgba(244, 246, 250, 0.92);
-  max-width: 28rem;
+  max-width: none;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .hero-sub {
