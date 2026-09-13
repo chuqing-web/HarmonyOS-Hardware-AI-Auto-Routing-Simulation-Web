@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI-SCH Simulator — HarmonyOS-native schematic simulation, AI schematic generation, and PCB auto-routing." />
-  <title>AI-SCH Simulator · Schematic Simulation · AI Schematics · PCB Auto-Routing</title>
+  <meta name="description" content="AI-SCH Simulator — HarmonyOS-native schematic simulation, AI schematic generation, PCB layout & auto-routing, and Agent Bridge + MCP for live agent control." />
+  <title>AI-SCH Simulator · Simulation · AI Schematics · PCB · MCP</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/app-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=20260807b" />
+  <link rel="stylesheet" href="css/styles.css?v=20260913a" />
 </head>
 <body>
   <header class="site-header">
@@ -23,6 +23,7 @@
         <li><a href="#features" data-i18n="nav.features">Features</a></li>
         <li><a href="#simulation" data-i18n="nav.simulation">Simulation</a></li>
         <li><a href="#pcb" data-i18n="nav.pcb">PCB</a></li>
+        <li><a href="#mcp" data-i18n="nav.mcp">MCP</a></li>
         <li><a href="#pipeline" data-i18n="nav.pipeline">Pipeline</a></li>
         <li><a href="#labs" data-i18n="nav.labs">Labs</a></li>
         <li><a href="#announcement" data-i18n="nav.announcement">News</a></li>
@@ -43,10 +44,10 @@
       <div class="container hero-copy">
         <p class="brand-hero reveal">AI-SCH</p>
         <h1 class="reveal d1" data-i18n="hero.title">Turn AI into simulatable, verifiable schematics</h1>
-        <p class="hero-sub reveal d2" data-i18n="hero.sub">Edit and simulate circuits, generate schematics from natural language, then auto-route copper on board — one native toolchain from idea to layout.</p>
+        <p class="hero-sub reveal d2" data-i18n="hero.sub">Edit and simulate circuits, generate schematics from natural language, auto-route PCB copper, and let external agents drive the running app via Agent Bridge + MCP.</p>
         <div class="cta-row reveal d3">
           <a class="btn btn-primary" href="#features" data-i18n="hero.ctaPrimary">Explore capabilities</a>
-          <a class="btn btn-ghost" href="#pcb" data-i18n="hero.ctaSecondary">PCB auto-routing</a>
+          <a class="btn btn-ghost" href="#mcp" data-i18n="hero.ctaSecondary">Agent Bridge + MCP</a>
         </div>
       </div>
     </section>
@@ -54,8 +55,8 @@
     <section id="features" class="features">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow" data-i18n="why.eyebrow">Three core capabilities</p>
-          <h2 data-i18n="why.title">Simulate · Generate · Route — built for real circuits</h2>
+          <p class="eyebrow" data-i18n="why.eyebrow">Core capabilities</p>
+          <h2 data-i18n="why.title">Simulate · Generate · Route · Agent-drive</h2>
         </div>
         <ol class="feature-list">
           <li class="feature-item reveal">
@@ -75,15 +76,22 @@
           <li class="feature-item reveal d2">
             <span class="feature-num">03</span>
             <div>
-              <h3 data-i18n="why.card3.title">PCB auto-routing</h3>
-              <p data-i18n="why.card3.body">Forward annotation from schematic, copper-aware maze routing, then inspect layers in 2D and the board in 3D.</p>
+              <h3 data-i18n="why.card3.title">PCB layout &amp; auto-routing</h3>
+              <p data-i18n="why.card3.body">Forward annotation from schematic, classic copper-aware maze routing, then inspect layers in 2D and the board in 3D.</p>
             </div>
           </li>
           <li class="feature-item reveal d3">
             <span class="feature-num">04</span>
             <div>
-              <h3 data-i18n="why.card4.title">HarmonyOS native</h3>
-              <p data-i18n="why.card4.body">Built for 2-in-1 / tablet on HarmonyOS NEXT with modular HAR architecture and familiar schematic UX.</p>
+              <h3 data-i18n="why.card4.title">Agent Bridge + MCP</h3>
+              <p data-i18n="why.card4.body">External agents (Cursor / OpenClaw) live-control atomic SCH/PCB edits on the running app — strategy stays outside; no in-app auto-route tools exposed.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal">
+            <span class="feature-num">05</span>
+            <div>
+              <h3 data-i18n="why.card5.title">HarmonyOS native</h3>
+              <p data-i18n="why.card5.body">Built for 2-in-1 / tablet on HarmonyOS NEXT with modular HAR architecture and familiar schematic UX.</p>
             </div>
           </li>
         </ol>
@@ -93,9 +101,9 @@
     <section class="pcb-showcase" id="pcb">
       <div class="container">
         <div class="section-head reveal section-head-wide">
-          <p class="eyebrow" data-i18n="pcb.eyebrow">PCB auto-routing</p>
+          <p class="eyebrow" data-i18n="pcb.eyebrow">PCB layout &amp; auto-routing</p>
           <h2 data-i18n="pcb.title">From netlist to copper — then inspect in 2D &amp; 3D</h2>
-          <p class="section-sub" data-i18n="pcb.sub">Auto-route after schematic capture, review copper layers in 2D, and validate the physical board in 3D — the same HarmonyOS-native toolchain.</p>
+          <p class="section-sub" data-i18n="pcb.sub">Forward/reverse annotate after schematic capture, classic maze auto-route, review copper layers in 2D, and validate the physical board in 3D.</p>
         </div>
       </div>
       <div class="pcb-bleed">
@@ -103,7 +111,7 @@
           <img src="assets/images/pcb-2d.png" alt="PCB 2D copper layout preview" width="1200" height="800" loading="lazy" />
           <figcaption>
             <span data-i18n="pcb.tag2d">2D copper &amp; placement</span>
-            <p data-i18n="pcb.note2d">Multi-layer traces, pads, and silk for teaching boards</p>
+            <p data-i18n="pcb.note2d">Multi-layer traces, pads, and silk after classic auto-routing</p>
           </figcaption>
         </figure>
         <figure class="pcb-panel reveal d2">
@@ -116,6 +124,34 @@
       </div>
     </section>
 
+    <section class="mcp-section" id="mcp">
+      <div class="container">
+        <div class="section-head reveal section-head-wide">
+          <p class="eyebrow" data-i18n="mcp.eyebrow">New · Agent Bridge + MCP</p>
+          <h2 data-i18n="mcp.title">Let external agents drive the running app</h2>
+          <p class="section-sub" data-i18n="mcp.sub">Connect Cursor or OpenClaw through a localhost MCP adapter. Reasoning stays in the agent; ElecDraw executes atomic SCH/PCB edits with drawing sessions, DRC-aware clearance, and a live canvas lock.</p>
+        </div>
+        <div class="mcp-grid reveal d1">
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p1.label">Live control</span>
+            <h3 data-i18n="mcp.p1.title">Agent Bridge on-device</h3>
+            <p data-i18n="mcp.p1.body">Enable in AI Settings → Agent Bridge. Copy the MCP snippet (token included) and point Cursor / OpenClaw at tools/elecdraw-mcp.</p>
+          </article>
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p2.label">Atomic ops</span>
+            <h3 data-i18n="mcp.p2.title">SCH &amp; PCB primitives</h3>
+            <p data-i18n="mcp.p2.body">Library search, place devices, wire segments, net labels; PCB forward annotate, move footprints, tracks, vias, copper clear — strategy decided by the external agent.</p>
+          </article>
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p3.label">Safe boundary</span>
+            <h3 data-i18n="mcp.p3.title">What stays inside the app</h3>
+            <p data-i18n="mcp.p3.body">In-app AI full pipeline and classic WAR / PCB auto-route tools are not exposed over MCP. Localhost-only RPC with bearer token.</p>
+          </article>
+        </div>
+        <p class="mcp-note reveal d2" data-i18n="mcp.note">Screenshot gallery for MCP coming soon — this section is a capability intro only.</p>
+      </div>
+    </section>
+
     <section class="cap-section" id="simulation">
       <div class="container">
         <div class="section-head reveal">
@@ -125,16 +161,16 @@
         <div class="cap-stack">
           <article class="cap-row reveal">
             <div class="cap-visual">
-              <img src="assets/images/feature-ai.png" alt="AI schematic generation" width="640" height="360" loading="lazy" />
+              <img src="assets/images/feature-ai.png" alt="AI schematic generation in progress" width="640" height="360" loading="lazy" />
             </div>
             <div class="cap-copy">
               <h3 data-i18n="cap.ai.title">AI schematic generation</h3>
-              <p data-i18n="cap.ai.body">Clarify → select → layout → net → route → QA. Versioned prompts and a multi-agent loop land editable, simulatable topology.</p>
+              <p data-i18n="cap.ai.body">Clarify → select → layout → net → route → QA. Versioned prompts and a multi-agent loop land editable, simulatable topology — as shown while the canvas is locked during generation.</p>
             </div>
           </article>
           <article class="cap-row reverse reveal d1">
             <div class="cap-visual">
-              <img src="assets/images/feature-instruments.png" alt="Schematic simulation with virtual instruments" width="640" height="360" loading="lazy" />
+              <img src="assets/images/feature-instruments.png" alt="Virtual oscilloscope during schematic simulation" width="640" height="360" loading="lazy" />
             </div>
             <div class="cap-copy">
               <h3 data-i18n="cap.sim.title">Schematic simulation</h3>
@@ -143,20 +179,20 @@
           </article>
           <article class="cap-row reveal d2">
             <div class="cap-visual">
-              <img src="assets/images/feature-mcu.png" alt="PCB auto-routing workflow" width="640" height="360" loading="lazy" />
+              <img src="assets/images/feature-mcu.png" alt="MCU debug panel with HEX load and registers" width="640" height="360" loading="lazy" />
             </div>
             <div class="cap-copy">
-              <h3 data-i18n="cap.pcb.title">PCB auto-routing</h3>
-              <p data-i18n="cap.pcb.body">Same routing engine as the editor: obstacle-aware path search, multi-layer copper, teaching-board layouts ready for 2D/3D review.</p>
+              <h3 data-i18n="cap.mcu.title">MCU debug</h3>
+              <p data-i18n="cap.mcu.body">Intel HEX load for 8051 / STM32 labs, SFR / core registers, breakpoints, single-step, and virtual UART with instrument loopback.</p>
             </div>
           </article>
           <article class="cap-row reverse reveal" id="labs">
             <div class="cap-visual">
-              <img src="assets/images/feature-labs.png" alt="Lab templates" width="640" height="360" loading="lazy" />
+              <img src="assets/images/feature-labs.png" alt="Teaching lab template library" width="640" height="360" loading="lazy" />
             </div>
             <div class="cap-copy">
               <h3 data-i18n="cap.lab.title">Lab templates</h3>
-              <p data-i18n="cap.lab.body">Dozens of .schsim / .pcbsim experiments spanning passives, op-amps, digital gates, MCU, and UART.</p>
+              <p data-i18n="cap.lab.body">Dozens of .schsim / .pcbsim experiments spanning passives, op-amps, digital gates, MCU, and UART — insert from the teaching panel.</p>
             </div>
           </article>
         </div>
@@ -206,7 +242,7 @@
         <div class="reveal">
           <p class="eyebrow" data-i18n="plat.eyebrow">Platform</p>
           <h2 data-i18n="plat.title">Native on HarmonyOS NEXT</h2>
-          <p data-i18n="plat.body">AI-SCH Simulator (com.elecdraw.aischsim) targets SDK API 12+, Stage model ArkUI, and classroom / contest / pre-validation workflows — filling the gap left by Windows-only EDA toolchains.</p>
+          <p data-i18n="plat.body">AI-SCH Simulator (com.elecdraw.aischsim) targets SDK API 12+, Stage model ArkUI — schematic simulation, AI generation, PCB layout, and Agent Bridge + MCP for classroom, contest, and pre-validation workflows.</p>
         </div>
         <ul class="reveal d2">
           <li data-i18n="plat.li1">Bundle · com.elecdraw.aischsim</li>
@@ -225,7 +261,7 @@
             <img class="brand-mark" src="assets/images/app-icon.png" alt="" width="32" height="32" />
             AI-SCH
           </div>
-          <div data-i18n="footer.tag">Schematic simulation · AI schematics · PCB auto-routing on HarmonyOS</div>
+          <div data-i18n="footer.tag">Schematic simulation · AI schematics · PCB · Agent Bridge + MCP on HarmonyOS</div>
         </div>
         <div class="footer-links">
           <a href="api/announcement.json" data-i18n="footer.api">Announcement API</a>
@@ -236,7 +272,7 @@
     </div>
   </footer>
 
-  <script src="js/i18n.js?v=20260807b"></script>
-  <script src="js/main.js?v=20260807b"></script>
+  <script src="js/i18n.js?v=20260913a"></script>
+  <script src="js/main.js?v=20260913a"></script>
 </body>
 </html>

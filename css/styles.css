@@ -359,6 +359,13 @@ section {
   padding-left: 2rem;
 }
 
+.feature-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  border-right: 0;
+  padding-right: 0;
+  max-width: 50%;
+}
+
 .feature-num {
   font-family: var(--font-display);
   font-size: 0.95rem;
@@ -505,6 +512,73 @@ section {
   color: var(--muted);
   font-size: 1rem;
   max-width: 28rem;
+}
+
+/* MCP — text-only intro (no screenshots yet) */
+.mcp-section {
+  background: linear-gradient(165deg, #0f1720 0%, #152028 48%, #0c1218 100%);
+  color: var(--hero-ink);
+  border-top: 1px solid rgba(94, 234, 212, 0.12);
+}
+
+.mcp-section .eyebrow {
+  color: #5eead4;
+}
+
+.mcp-section h2 {
+  color: #fff;
+}
+
+.mcp-section .section-sub {
+  color: rgba(244, 246, 250, 0.62);
+  max-width: 42rem;
+}
+
+.mcp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.mcp-point {
+  padding: 1.35rem 1.25rem 1.5rem;
+  border: 1px solid rgba(244, 246, 250, 0.1);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.mcp-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5eead4;
+  margin-bottom: 0.55rem;
+}
+
+.mcp-point h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.mcp-point p {
+  margin: 0;
+  color: rgba(244, 246, 250, 0.58);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.mcp-note {
+  margin: 1.75rem 0 0;
+  font-size: 0.85rem;
+  color: rgba(244, 246, 250, 0.38);
+  font-style: italic;
 }
 
 /* Pipeline */
@@ -758,6 +832,7 @@ section {
   .ann-card,
   .platform-grid,
   .pcb-bleed,
+  .mcp-grid,
   .cap-row,
   .cap-row.reverse {
     grid-template-columns: 1fr;

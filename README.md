@@ -132,9 +132,13 @@ git push origin main
 |------|------|
 | `api/announcement.json` | App + 官网公告数据 |
 | `assets/images/Announcement.png` | 当前公告配图（示例） |
-| `assets/images/pcb-2d.png` / `pcb-3d.png` | 官网 PCB 画廊 |
+| `assets/images/pcb-2d.png` / `pcb-3d.png` | 官网 PCB 画廊（仅配 PCB 文案） |
+| `assets/images/feature-ai.png` | AI 整图生成中界面 |
+| `assets/images/feature-instruments.png` | 示波器 / 原理图仿真 |
+| `assets/images/feature-mcu.png` | MCU 调试（HEX / 寄存器） |
+| `assets/images/feature-labs.png` | 教学实验模板库 |
 | `assets/images/app-icon.png` / `favicon.png` | 与 App 一致的图标 |
-| `index.html` / `css/` / `js/` | 产品介绍页 |
+| `index.html` / `css/` / `js/` | 产品介绍页（含 Agent Bridge + MCP 文字介绍，暂无 MCP 截图） |
 
 ---
 
