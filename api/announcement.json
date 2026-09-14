@@ -6,9 +6,9 @@
   "body_en": "AI-SCH Simulator adds Agent Bridge + MCP: enable the localhost bridge in AI Settings, then Cursor / OpenClaw can drive atomic schematic place/wire and PCB layout/track/via ops on the running app via tools/elecdraw-mcp. Reasoning stays in the external agent; in-app AI full pipeline and auto-route tools are not exposed. Existing pillars unchanged: mixed-signal simulation, AI verifiable schematics, classic PCB auto-routing with 2D/3D review, MCU HEX debug, and lab templates.",
   "title": "【新能力】Agent Bridge + MCP：外部 Agent 实机驱动 SCH/PCB",
   "body": "AI-SCH 仿真器新增 Agent Bridge + MCP：在「AI 设置」开启本机桥接后，Cursor / OpenClaw 可通过 tools/elecdraw-mcp 对正在运行的 App 做原子级原理图放置/连线与 PCB 布局/走线/过孔操作。推理在外部 Agent，应用内 AI 全流水线与自动布线工具不经 MCP 暴露。既有能力不变：混合信号仿真、AI 生成可验证原理图、经典 PCB 自动布线与 2D/3D 检视、MCU HEX 调试与实验模板。",
-  "imageUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/Announcement.png",
-  "image_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/Announcement.png",
-  "linkUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/#mcp",
-  "link_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/#mcp",
+  "imageUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/assets/images/Announcement.png",
+  "image_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/assets/images/Announcement.png",
+  "linkUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/#mcp",
+  "link_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/#mcp",
   "publishedAt": "2026-09-13"
 }

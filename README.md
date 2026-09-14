@@ -4,10 +4,10 @@
 
 **线上地址（需已开启 GitHub Pages）：**
 
-- 官网：https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/
-- 公告 API：https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/api/announcement.json
+- 官网：https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/
+- 公告 API：https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/api/announcement.json
 
-部署仓库：[chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web](https://github.com/chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web)
+部署仓库：[chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page](https://github.com/chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page)
 
 本地源目录（本工程内）：`C:\Projects\ElecDraw_Harmony\Announcement_Page\`
 
@@ -46,10 +46,10 @@ App 首页 **Announcement** 面板只读部署仓库上的 `api/announcement.jso
   "body_en": "English body here…",
   "title": "【软件正式发布】AI-SCH 仿真器 v1.1.0",
   "body": "这里写中文正文……",
-  "imageUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/Announcement.png",
-  "image_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/assets/images/Announcement.png",
-  "linkUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/",
-  "link_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/",
+  "imageUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/assets/images/Announcement.png",
+  "image_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/assets/images/Announcement.png",
+  "linkUrl": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/",
+  "link_url": "https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/",
   "publishedAt": "2026-08-04"
 }
 ```
@@ -84,7 +84,7 @@ PowerShell：
 ```powershell
 $src = "C:\Projects\ElecDraw_Harmony\Announcement_Page"
 $tmp = "$env:TEMP\aisch-announcement-deploy"
-$repo = "https://github.com/chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web.git"
+$repo = "https://github.com/chuqing-web/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page.git"
 
 if (-not (Test-Path "$tmp\.git")) {
   git clone $repo $tmp
@@ -103,7 +103,7 @@ git push origin main
 
 推送成功后等待约 **1～2 分钟**，再检查：
 
-1. API：打开 [announcement.json](https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web/api/announcement.json)，确认文字与 `imageUrl` 已变。  
+1. API：打开 [announcement.json](https://chuqing-web.github.io/HarmonyOS-Hardware-AI-Auto-Routing-Simulation-Web-Announcement-Page/api/announcement.json)，确认文字与 `imageUrl` 已变。  
 2. 图片：浏览器直接打开 JSON 里的 `imageUrl`，应能看到新图。  
 3. App：有网时重新进入首页 Announcement；若仍是旧内容，稍等或强刷 / 重启应用（可能有缓存）。
 
